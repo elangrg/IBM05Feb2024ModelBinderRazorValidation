@@ -1,0 +1,98 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RazorEssentialSyntax</title>
+   
+</head>
+<body>
+    <h1> @@{} Block Eg</h1>
+    @{
+        string msg = " <script>alert('Hello Razor!!!, Hacked !!!')</script> ";
+
+        int empid = 1000;
+
+
+        <p> @msg</p>
+
+
+        if (msg.Length > 0)
+        {
+
+
+        }
+
+        T Min<T>(T a, T b)
+        {
+            return a;
+        }
+
+    }
+
+    @Html.Raw(msg)
+
+    <h1> Ganesh@abc.com</h1>
+    Empid@empid
+    Empid@(empid)
+
+
+    @Min(100, 200);
+    
+    @(Min<int>(100, 200)); @* explict expression - generic  *@ 
+
+    @{ 
+
+        <span> client side </span>
+
+        @:this is client side code
+
+
+        @:this
+        @:is
+        @:client code
+
+        <text>
+                this 
+    is
+    multiple line
+    client side
+    
+    
+    
+        </text>
+
+
+
+    }
+
+
+    @@Construct
+
+
+    @for (int i = 0; i < 10; i++)
+    {
+        <p> value of i is @i</p>
+
+        if (i>5)
+        {
+
+            <p> is > 5</p>
+        }
+
+
+    }
+
+
+    @if (msg.Length>0)
+    {
+        <p> msg has a message</p>
+    }
+
+</body>
+</html>

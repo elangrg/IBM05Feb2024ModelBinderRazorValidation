@@ -18,8 +18,6 @@ namespace IBM05Feb2024ModelBinderRazorValidation.Controllers
         {
             string st = this.Request.Form.Get("Day");
 
-
-
             if (ModelState.IsValid)
             {
 

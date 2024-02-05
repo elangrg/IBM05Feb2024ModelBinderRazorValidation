@@ -114,10 +114,12 @@
     <Content Include="Views\ModelBinderEg\Create.cshtml" />
     <Content Include="Views\ModelBinderEg\AddEmployee.cshtml" />
     <Content Include="Views\ModelBinderEg\Index.cshtml" />
+    <Content Include="Views\RazorViewEngine\RazorEssentialSyntax.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ModelBinderEgController.cs" />
+    <Compile Include="Controllers\RazorViewEngineController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
