@@ -13,5 +13,21 @@ namespace IBM05Feb2024ModelBinderRazorValidation.Controllers
         {
             return View();
         }
+
+ public ActionResult LayoutContent()
+        {
+            return View();
+        }
+
+public ActionResult LayoutSectionContent()
+        {
+            return View();
+        }
+   
+    
+    public ActionResult LayoutNestedContent()
+        {
+            return View();
+        }
     }
 }

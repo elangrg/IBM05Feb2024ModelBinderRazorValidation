@@ -115,6 +115,13 @@
     <Content Include="Views\ModelBinderEg\AddEmployee.cshtml" />
     <Content Include="Views\ModelBinderEg\Index.cshtml" />
     <Content Include="Views\RazorViewEngine\RazorEssentialSyntax.cshtml" />
+    <Content Include="Views\Shared\_LayoutMain.cshtml" />
+    <Content Include="Views\RazorViewEngine\LayoutContent.cshtml" />
+    <Content Include="Views\RazorViewEngine\LayoutSectionContent.cshtml" />
+    <Content Include="Views\Shared\_LayoutL0.cshtml" />
+    <Content Include="Views\Shared\_LayoutL1.cshtml" />
+    <Content Include="Views\Shared\_LayoutL2.cshtml" />
+    <Content Include="Views\RazorViewEngine\LayoutNestedContent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />

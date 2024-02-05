@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+
+    <h1>in the Layout Main</h1>
+    <div>
+
+
+
+        @RenderBody()
+    </div>
+
+
+
+    @if (IsSectionDefined("Footer"))
+    {
+
+        <footer> @RenderSection("Footer",true )</footer>
+
+
+    }
+    else
+    { 
+    <footer> In Layout Page Footer </footer>
+    
+    
+    }
+
+
+
+
+<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    @RenderSection("Script",false)
+</body>
+</html>
