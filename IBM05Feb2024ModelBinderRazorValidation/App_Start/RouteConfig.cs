@@ -16,7 +16,7 @@ namespace IBM05Feb2024ModelBinderRazorValidation
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "ModelBinderEg", action = "index", id = UrlParameter.Optional }
+                defaults: new { controller = "employeedepts", action = "index", id = UrlParameter.Optional }
             );
         }
     }

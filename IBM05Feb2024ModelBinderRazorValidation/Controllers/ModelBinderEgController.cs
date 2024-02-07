@@ -62,9 +62,16 @@ namespace IBM05Feb2024ModelBinderRazorValidation.Controllers
         // 
         public ActionResult AddEmployee(Models.Employee emp, FormCollection col, string EmpName, [Bind(Exclude = "EmpID,EmpName")] Models.Employee objemp, [Bind(Include = "EmpID,EmpName")] Models.Employee objemp3)
         {
-            Models.Employee objone = new Models.Employee();
 
-            this.UpdateModel(objone);
+
+            if (ModelState.IsValid)
+            {
+                Models.Employee objone = new Models.Employee();
+
+                this.UpdateModel(objone);
+            }
+
+           
 
 
 
